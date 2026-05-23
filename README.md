@@ -59,6 +59,30 @@ private_key.pem
 
 The first connection may fail because the IoT Gateway rejects the new client certificate. In IoT Gateway, move the certificate from rejected to trusted, save, restart the server, and run the script again.
 
+## AsyncUA BadServerUri workaround
+
+Some AsyncUA versions may fail with a `BadServerUri` error even when the endpoint, certificate, and security settings are correct.
+
+If this happens, edit this file inside your virtual environment.
+
+```text
+venv\Lib\site-packages\asyncua\client\client.py
+```
+
+Find this line around line `501`:
+
+```python
+params.ServerUri = f"urn:{self.server_url.hostname}{self.server_url.path.replace('/', ':')}"
+```
+
+Change it to:
+
+```python
+params.ServerUri = None
+```
+
+Save the file and run the Python script again.
+
 ## RAPID variables
 
 The scripts use:
@@ -108,5 +132,7 @@ Example offset input:
 ```
 
 This sends a 10 mm X offset.
+
+
 
 -----------------------------------------------------------------------------
