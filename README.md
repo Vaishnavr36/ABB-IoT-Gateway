@@ -59,7 +59,7 @@ private_key.pem
 
 The first connection may fail because the IoT Gateway rejects the new client certificate. In IoT Gateway, move the certificate from rejected to trusted, save, restart the server, and run the script again.
 
-## AsyncUA BadServerUri workaround
+## Asyncua BadServerUri workaround
 
 Some AsyncUA versions may fail with a `BadServerUri` error even when the endpoint, certificate, and security settings are correct.
 
