@@ -105,7 +105,7 @@ moveStatus
 The Python script writes `offset` and sets `moveRequest=True`. RAPID reads the command, resets `moveRequest=False`, moves the robot, and updates `moveDone` and `moveStatus`.
 
 ## Sample scripts
-The follwing example scripts are provided in this repoitory:
+The following example scripts are provided in this repoitory:
 
 Test connection:
 
