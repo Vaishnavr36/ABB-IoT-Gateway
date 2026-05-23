@@ -1,6 +1,6 @@
 # ABB IoT Gateway Python Client
 
-This README covers only the Python client setup. ABB IoT Gateway installation, alias setup, UserID setup, server restart, logs, and certificate trust steps are in `IoT_Gateway_setup.pdf`.
+This README covers only the Python client setup. ABB IoT Gateway installation, alias setup, UserID setup, server restart, logs, and certificate trust steps are in [IoT_Gateway_setup.pdf](https://docs.google.com/document/d/1i3LW3nkOK1fSVOEwlochxpxlMHZINrTRNiXYX8Rr2Ns/edit?usp=sharing).
 
 Security used by the client:
 
